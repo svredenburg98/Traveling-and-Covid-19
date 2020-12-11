@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
 # setup postgres connection
-conn = psycopg2.connect(f"dbname='data_trips_covid_db' user='postgres' host='localhost' password='YOUR-PASSWORD-HERE'")
+conn = psycopg2.connect(f"dbname='data_trips_covid_db' user='postgres' host='localhost' password='Jasmine!23'")
 
 #set up cursor
 

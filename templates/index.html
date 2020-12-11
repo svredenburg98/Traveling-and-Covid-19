@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel and COVID-19</title>
+
+  <!-- Leaflet CSS & JS-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- d3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- Leaflet-Choropleth JavaScript -->
+  <script type="text/javascript" src="static/js/choropleth.js"></script>
+  <!-- Our Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Marker Cluster JS & CSS -->
+  <script type="text/javascript"
+    src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Population Trips Affected By Covid</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <h5>
+            <bold>Covid Menu</bold>
+          </h5>
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            <option id="cases">Choose an Option</option>
+            <option id="cases" value="cases">Covid Cases</option>
+            <option id="deaths" value="deaths">Covid Deaths</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <h5>
+            <bold>Trips Menu</bold>
+          </h5>
+          <select id="selDataset2" onchange="optionChanged2(this.value)">
+            <option id="trips">Choose an Option</option>
+            <option id="home" value="stay">Stay at Home</option>
+            <option id="nothome" value="away">Away from Home</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- The div where we will inject our map -->
+
+
+
+    <div class="col-md-6">
+      <div id="map" style="width:100%; height:580px"></div>
+    </div>
+    <div class="col-md-6">
+      <div id="map2" style="width:100%; height:580px"></div>
+    </div>
+
+    <script type="text/javascript" src="static/js/config.js"></script>
+
+    <script type="text/javascript" src="static/js/logic.js"></script>
+    <script type="text/javascript" src="static/js/logic2.js"></script>
+
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>
+
+</html>

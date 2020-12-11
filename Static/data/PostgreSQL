@@ -1,0 +1,14 @@
+CREATE TABLE traveling_covid(
+	county_name_county VARCHAR (30) NOT NULL,
+	pop_at_home INT,
+	pop_not_at_home INT,
+	trips INT,
+	covid_cases INT,
+	covid_deaths INT,
+	longitude DOUBLE PRECISION,
+	latitude DOUBLE PRECISION
+);
+
+DROP TABLE traveling_covid;
+
+SELECT * FROM traveling_covid;
