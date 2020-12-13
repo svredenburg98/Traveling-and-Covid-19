@@ -54,7 +54,7 @@ d3.json(link).then(function (data) {
 
     // Set color scale
     //scale: ["#ffffb2", "#b10026"],
-    scale: ["white", "black"],
+    scale: ["black", "black"],
 
     // Number of breaks in step range
     steps: 5,
