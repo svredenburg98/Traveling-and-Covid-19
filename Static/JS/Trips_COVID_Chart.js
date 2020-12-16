@@ -96,33 +96,33 @@ d3.csv("data").then(function (data) {
 
 
 
-    var trace2 = {
-        x: trips,
-        y: covidDeaths,
-        mode: 'markers',
-        type: 'scatter',
-        name: 'County',
-        text: countyName,
-        marker: {
-            size: 15,
-            color: "red"
-        }
-    };
-
-    var data = [trace2];
-    var layout = {
-        xaxis: {
-            title: "Number of Trips Taken",
-            range: [0, d3.max(data, d => d.trips)]
-        },
-        yaxis: {
-            title: "COVID-19 Deaths",
-            range: [0, d3.max(data, d => d.covid_deaths)],
-            autorange: true
-        },
-        title: 'Trips vs COVID-19 Deaths',
-        plot_bgcolor: "white"
+var trace2 = {
+    x: trips,
+    y: covidDeaths,
+    mode: 'markers',
+    type: 'scatter',
+    name: 'County',
+    text: countyName,
+    marker: {
+        size: 15,
+        color: "red"
     }
-    Plotly.newPlot('bar2', data, layout);
+};
+
+var data = [trace2];
+var layout = {
+    xaxis: {
+        title: "Number of Trips Taken",
+        range: [0, d3.max(data, d => d.trips)]
+    },
+    yaxis: {
+        title: "COVID-19 Deaths",
+        range: [0, d3.max(data, d => d.covid_deaths)],
+        autorange: true
+    },
+    title: 'Trips vs COVID-19 Deaths',
+    plot_bgcolor: "white"
+}
+Plotly.newPlot('bar2', data, layout);
 
 })

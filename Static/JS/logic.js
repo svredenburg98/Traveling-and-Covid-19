@@ -17,7 +17,7 @@ var layerGroup = L.layerGroup().addTo(myMap);
 markersM = [];
 
 // Load in geojson data
-var link = "static/data/tx_county.geojson";
+var link = "Static/data/tx_county.geojson";
 
 //var url = "https://opendata.arcgis.com/datasets/628578697fb24d8ea4c32fa0c5ae1843_0.geojson?where=(Confirmed%20%3E%200)%20AND%20Province_State%20%3D%20'Texas'"
 var url = "/data"

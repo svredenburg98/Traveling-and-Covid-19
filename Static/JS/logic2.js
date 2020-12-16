@@ -15,7 +15,7 @@ var baseLayer2 = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles
 var layerGroup2 = L.layerGroup().addTo(myMap2);
 
 // Load in geojson data
-var link2 = "static/data/tx_county.geojson";
+var link2 = "Static/data/tx_county.geojson";
 
 var url2 = "/data"
 
