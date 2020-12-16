@@ -14,8 +14,8 @@ Determine if movement of individuals contributes to increase in COVID19 cases an
 
 Data Sets:
 
-CDC Daily COVID19 data by county 
-Bureau of Transportation Statistics travel data
+CDC Daily COVID19 data by county, 
+Bureau of Transportation Statistics travel data,
 Open Data Soft county polygons
 
 In this project, we manipulated the data from various sources and imported them to a PostegreSQL database, then created two county maps with circles representing magnitude of COVID19 cases and deaths as compared to amount of individuals leaving their homes during quarantine. The data used in the visualizations was brought in from the database using a python Flask application.
